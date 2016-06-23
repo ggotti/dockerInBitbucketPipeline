@@ -24,8 +24,7 @@ RUN chmod +x /usr/local/bin/docker-compose
 # Pulls in Remote Machine Management Gist. This allows the machine configuration, stored in machine.zip to be imported
 # into the runner
 # https://gist.github.com/schickling/2c48da462a7def0a577e
-RUN curl -L https://gist.github.com/schickling/2c48da462a7def0a577e/archive/7b975e6dc85f8121308051fe8ddb8abdf40b7007.zip > machineMigrator.zip
+RUN curl -L https://gist.github.com/ggotti/811278f91f0f5a3463cb9ae75d56cfda/archive/7de2af32259b36dbe0108d0c470b7dfa35a21dde.zip > machineMigrator.zip
 RUN unzip -j machineMigrator.zip
-
 
 RUN docker-machine
