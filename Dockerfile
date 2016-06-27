@@ -25,6 +25,7 @@ RUN chmod +x /usr/local/bin/docker-compose
 # into the runner
 # https://gist.github.com/schickling/2c48da462a7def0a577e
 RUN curl -L https://gist.github.com/ggotti/811278f91f0f5a3463cb9ae75d56cfda/archive/7de2af32259b36dbe0108d0c470b7dfa35a21dde.zip > machineMigrator.zip
-RUN unzip -j machineMigrator.zip
+RUN mkdir -p /usr/local/bin/machine-migration
+RUN unzip -j machineMigrator.zip -d /usr/local/bin/machine-migration
 
 RUN docker-machine
