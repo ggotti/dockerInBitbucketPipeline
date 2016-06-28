@@ -28,5 +28,3 @@ RUN curl -L https://gist.github.com/ggotti/811278f91f0f5a3463cb9ae75d56cfda/arch
 RUN mkdir -p /usr/local/bin/machine-migration
 RUN unzip -j machineMigrator.zip -d /usr/local/bin/machine-migration
 RUN chmod -R a+x /usr/local/bin/machine-migration
-
-ONBUILD echo "It's Digital Ocean: $DigitalOcean"
